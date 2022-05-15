@@ -168,22 +168,22 @@
 
 					document.write(`
 					<div about="section/education/1">
-						<h2 data-key="edu1">Ecole d'ingénieur Sup Galilée</h2>
-						<p data-key="eduDet1" class="details">Diplôme d'ingénieur informatique (en apprentissage)</p>
-						<p data-key="eduDat1" >2020 - 2023</p>
+						<h2 data-key="edu1" property="dc:title">Ecole d'ingénieur Sup Galilée</h2>
+						<p data-key="eduDet1" class="details" property="dc:description">Diplôme d'ingénieur informatique (en apprentissage)</p>
+						<p data-key="eduDat1" property="dc:date">2020 - 2023</p>
 					</div>
 
 					<div about="section/education/2">
-						<h2 data-key="edu2">Ecole Supérieure de Technologie Oujda, Maroc</h2>
-						<p data-key="eduDet2" class="details">Licence Professionnelle,
+						<h2 data-key="edu2" property="dc:title">Ecole Supérieure de Technologie Oujda, Maroc</h2>
+						<p data-key="eduDet2" class="details" property="dc:description">Licence Professionnelle,
 							Informatique Décisionnelle</p>
-						<p data-key="eduDat2"> 2019 - 2020</p>
+						<p data-key="eduDat2" property="dc:date"> 2019 - 2020</p>
 					</div>
 
 					<div about="section/education/3">
-						<h2 data-key="edu3">Ecole Supérieure de Technologie Oujda, Maroc</h2>
-						<p data-key="eduDet3" class="details">DUT, Développement Informatique</p>
-						<p data-key="eduDat3">2017 - 2019</p>
+						<h2 data-key="edu3" property="dc:title">Ecole Supérieure de Technologie Oujda, Maroc</h2>
+						<p data-key="eduDet3" class="details" property="dc:description">DUT, Développement Informatique</p>
+						<p data-key="eduDat3" property="dc:date">2017 - 2019</p>
 					</div>
 					`);
 
@@ -215,23 +215,25 @@
 						//<![CDATA[
 	
 						document.write(`
-						<div>
-							<h2 data-key="prj1">Application Android</h2>
-							<p data-key="prjDet1"class="details">
+						
+						<div about="/section/projets/1">
+							<h2 data-key="prj1" property="dc:title">Application Android</h2>
+							<p data-key="prjDet1"class="details" property="dc:description">
 								Application Android (JAVA) d’information médicale avec une
 								base de données MySQL
 							</p>
 						</div>
-
-						<div>
-							<h2 data-key="prj2">Application desktop</h2>
-							<p data-key="prjDet2" class="details">Application desktop (C#) pour la gestion de restaurant avec une
+						
+			
+						<div about="/section/projets/2">
+							<h2 data-key="prj2" property="dc:title">Application desktop</h2>
+							<p data-key="prjDet2" class="details" property="dc:description">Application desktop (C#) pour la gestion de restaurant avec une
 								base de données MySQL. </p>
 						</div>
 
-						<div>
-							<h2 data-key="prj3">Application web </h2>
-							<p data-key="prjDet3" class="details">Application web (PHP/JS) pour la gestion d’un magasin
+						<div about="/section/projets/3">
+							<h2 data-key="prj3" property="dc:title">Application web </h2>
+							<p data-key="prjDet3" class="details" property="dc:description">Application web (PHP/JS) pour la gestion d’un magasin
 								d’optométrie avec une base de données MySQL.</p>
 						</div>
 						`);
@@ -259,7 +261,7 @@
 					</div>
 
 					<div class="sectionContent">
-						<ul class="keySkills">
+						<ul class="keySkills" property="dc:description">
 							<li>Java</li>
 							<li>C/C++</li>
 							<li>Javascript</li>
@@ -301,7 +303,7 @@
 								//<![CDATA[
 			
 								document.write(`
-									<ul>
+									<ul property="dc:description">
 										<p data-key="Ar">Arabe</p>
 										<p data-key="En">Anglais</p>
 										<p data-key="Fr">Français</p>
